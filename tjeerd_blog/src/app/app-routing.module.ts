@@ -1,14 +1,29 @@
+import { RemichComponent } from './remich/remich.component';
+import { StvithComponent } from './stvith/stvith.component';
+import { IntroComponent } from './intro/intro.component';
+import { AppComponent } from './app.component';
+import { VoorbereidingComponent } from './voorbereiding/voorbereiding.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-    
-  { 
-    path: 'blog',
-    loadChildren: () =>
-      import('./blog/blog.module').then((m) => m.BlogModule),
-  }
-  
+  {
+    path: 'intro', component: IntroComponent
+  },
+  {
+    path: 'voorbereiding', component: VoorbereidingComponent
+  },
+  {
+    path: 'stvith', component: StvithComponent
+  },
+  {
+    path: 'remich', component: RemichComponent
+  },
+  {
+    path: '',   redirectTo: '/intro', pathMatch: 'full' }, // redirect to `first-component`
+  {
+    path: '**', component: AppComponent
+  },
 ];
 
 @NgModule({
@@ -16,7 +31,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-
- 
-
- }
+}
