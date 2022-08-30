@@ -7,6 +7,12 @@ import { VoorbereidingComponent } from './voorbereiding/voorbereiding.component'
 import { IntroComponent } from './intro/intro.component';
 import { StvithComponent } from './stvith/stvith.component';
 import { RemichComponent } from './remich/remich.component';
+import { NancyComponent } from './nancy/nancy.component';
+import { LuxeuisComponent } from './luxeuis/luxeuis.component';
+import { GrayComponent } from './gray/gray.component';
+import { BeauneComponent } from './beaune/beaune.component';
+import { CharentayComponent } from './charentay/charentay.component';
+import { TournonComponent } from './tournon/tournon.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { RemichComponent } from './remich/remich.component';
     VoorbereidingComponent,
     IntroComponent,
     StvithComponent,
-    RemichComponent
+    RemichComponent,
+    NancyComponent,
+    LuxeuisComponent,
+    GrayComponent,
+    BeauneComponent,
+    CharentayComponent,
+    TournonComponent
   ],
   imports: [
     BrowserModule,
