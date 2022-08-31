@@ -7,10 +7,20 @@
       background-size:cover;
     }
 
+    #navbar-mobile {
+        display:none;
+      }
+
     /* Height for devices larger than 576px */
     @media (min-width: 992px) {
       #intro {
         margin-top: -58.59px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      #navbar-mobile {
+        display:block;
       }
     }
 
@@ -20,7 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" [style.background-color]="pickStyle()" style="z-index: 2000;">
     <div class="container-fluid">
 
-      <div class="collapse navbar-collapse" id="navbarExample01">
+      <div class="navbar-collapse" id="navbarExample01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" routerLink="/">Home</a>
@@ -37,9 +47,7 @@
               <a href="#" routerLink="/remich" class="dropdown-item">2. St Vith - Remich</a>
             </div>
           </li>
-
         </ul>
-
 
       </div>
     </div>
@@ -54,6 +62,32 @@
       </div>
     </div>
   </div>
+
+  <!-- navbar mobile-->
+  <nav id="navbar-mobile" class="navbar navbar-dark">
+
+
+      <div class="navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/voorbereiding">Voorbereiding</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Etappes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" routerLink="/stvith" class="dropdown-item">1. Maastricht - St Vith</a>
+              <a href="#" routerLink="/remich" class="dropdown-item">2. St Vith - Remich</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+  </nav>
 
   <!-- Background image -->
 </header>
