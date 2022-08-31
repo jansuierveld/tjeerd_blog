@@ -20,7 +20,7 @@ const routes: Routes = [
     path: 'remich', component: RemichComponent
   },
   {
-    path: '',   redirectTo: '/intro', pathMatch: 'full' }, // redirect to `first-component`
+    path: '',   redirectTo: 'intro', pathMatch: 'full' }, // redirect to `first-component`
   {
     path: '**', component: AppComponent
   },
