@@ -15,7 +15,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
 
   constructor(readonly introService: IntroService, private changeDetector: ChangeDetectorRef) {
     this.subscription = this.introService.getIntroObs().subscribe(mintro => {
-      console.log(mintro);
       this.isIntro = mintro
     });
   }

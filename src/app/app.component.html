@@ -26,30 +26,10 @@
 
   </style>
 
-  <!-- Navbar -->
+  <!-- Navbar niet mobile -->
   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" [style.background-color]="pickStyle()" style="z-index: 2000;">
     <div class="container-fluid">
-
-      <div class="navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" routerLink="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/voorbereiding">Voorbereiding</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Etappes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="#" routerLink="/stvith" class="dropdown-item">1. Maastricht - St Vith</a>
-              <a href="#" routerLink="/remich" class="dropdown-item">2. St Vith - Remich</a>
-            </div>
-          </li>
-        </ul>
-
-      </div>
+      <app-navbar></app-navbar>
     </div>
   </nav>
   <!-- Navbar -->
@@ -58,38 +38,15 @@
   <div *ngIf="isIntro" id="intro" class="bg-image shadow-2-strong">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
       <div class="container d-flex align-items-center justify-content-center text-center h-100">
-
       </div>
     </div>
   </div>
 
   <!-- navbar mobile-->
-  <nav id="navbar-mobile" class="navbar navbar-dark">
-
-
-      <div class="navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" routerLink="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/voorbereiding">Voorbereiding</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Etappes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="#" routerLink="/stvith" class="dropdown-item">1. Maastricht - St Vith</a>
-              <a href="#" routerLink="/remich" class="dropdown-item">2. St Vith - Remich</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
+  <nav id="navbar-mobile" class="navbar navbar-dark" [style.background-color]="'#585A66'">
+    <app-navbar></app-navbar>
   </nav>
 
-  <!-- Background image -->
 </header>
 
 <router-outlet></router-outlet>

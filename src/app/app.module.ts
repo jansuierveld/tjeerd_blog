@@ -13,6 +13,7 @@ import { GrayComponent } from './gray/gray.component';
 import { BeauneComponent } from './beaune/beaune.component';
 import { CharentayComponent } from './charentay/charentay.component';
 import { TournonComponent } from './tournon/tournon.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TournonComponent } from './tournon/tournon.component';
     GrayComponent,
     BeauneComponent,
     CharentayComponent,
-    TournonComponent
+    TournonComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
