@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { VoorbereidingComponent } from './voorbereiding/voorbereiding.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NancyComponent } from './nancy/nancy.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,9 @@ const routes: Routes = [
   },
   {
     path: 'remich', component: RemichComponent
+  },
+  {
+    path: 'nancy', component: NancyComponent
   },
   {
     path: '',   redirectTo: 'intro', pathMatch: 'full' }, // redirect to `first-component`

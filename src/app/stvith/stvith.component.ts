@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IntroService } from '../intro.service';
 
 @Component({
   selector: 'app-stvith',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StvithComponent implements OnInit {
 
-  constructor() { }
+  constructor(readonly introService: IntroService) { }
 
   ngOnInit(): void {
+    this.introService.intro$.next(false);
   }
 
 }
