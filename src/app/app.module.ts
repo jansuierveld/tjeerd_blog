@@ -14,6 +14,8 @@ import { BeauneComponent } from './beaune/beaune.component';
 import { CharentayComponent } from './charentay/charentay.component';
 import { TournonComponent } from './tournon/tournon.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { OrangeComponent } from './orange/orange.component';
+import { ManosqueComponent } from './manosque/manosque.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     BeauneComponent,
     CharentayComponent,
     TournonComponent,
-    NavbarComponent
+    NavbarComponent,
+    OrangeComponent,
+    ManosqueComponent
   ],
   imports: [
     BrowserModule,
