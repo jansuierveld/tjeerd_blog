@@ -46,7 +46,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     AppRoutingModule,
     BrowserModule,
     AppRoutingModule,
-    NgxGoogleAnalyticsModule.forRoot('G-B57ZZ6T4NP'),
+    NgxGoogleAnalyticsModule.forRoot('330357693'),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
