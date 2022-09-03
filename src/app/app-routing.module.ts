@@ -1,3 +1,9 @@
+import { ManosqueComponent } from './manosque/manosque.component';
+import { OrangeComponent } from './orange/orange.component';
+import { TournonComponent } from './tournon/tournon.component';
+import { GrayComponent } from './gray/gray.component';
+import { BeauneComponent } from './beaune/beaune.component';
+import { LuxeuisComponent } from './luxeuis/luxeuis.component';
 import { RemichComponent } from './remich/remich.component';
 import { StvithComponent } from './stvith/stvith.component';
 import { IntroComponent } from './intro/intro.component';
@@ -22,6 +28,24 @@ const routes: Routes = [
   },
   {
     path: 'nancy', component: NancyComponent
+  },
+  {
+    path: 'luxeuil', component: LuxeuisComponent
+  },
+  {
+    path: 'beaune', component: BeauneComponent
+  },
+  {
+    path: 'charentay', component: GrayComponent
+  },
+  {
+    path: 'tournon', component: TournonComponent
+  },
+  {
+    path: 'orange', component: OrangeComponent
+  },
+  {
+    path: 'manosque' , component: ManosqueComponent
   },
   {
     path: '',   redirectTo: 'intro', pathMatch: 'full' }, // redirect to `first-component`
