@@ -33,6 +33,9 @@ const routes: Routes = [
     path: 'luxeuil', component: LuxeuisComponent
   },
   {
+    path: 'Gray', component: GrayComponent
+  },
+  {
     path: 'beaune', component: BeauneComponent
   },
   {
