@@ -1,3 +1,4 @@
+import { CharentayComponent } from './charentay/charentay.component';
 import { ManosqueComponent } from './manosque/manosque.component';
 import { OrangeComponent } from './orange/orange.component';
 import { TournonComponent } from './tournon/tournon.component';
@@ -39,7 +40,7 @@ const routes: Routes = [
     path: 'beaune', component: BeauneComponent
   },
   {
-    path: 'charentay', component: GrayComponent
+    path: 'charentay', component: CharentayComponent
   },
   {
     path: 'tournon', component: TournonComponent
