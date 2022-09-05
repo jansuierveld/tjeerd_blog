@@ -20,6 +20,7 @@ import { OrangeComponent } from './orange/orange.component';
 import { ManosqueComponent } from './manosque/manosque.component';
 
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { SeillansComponent } from './seillans/seillans.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
     ManosqueComponent,
     AppComponent,
     NavbarComponent,
+    SeillansComponent,
   ],
   imports: [
     BrowserModule,

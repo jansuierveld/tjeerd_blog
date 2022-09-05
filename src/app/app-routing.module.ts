@@ -1,3 +1,4 @@
+import { SeillansComponent } from './seillans/seillans.component';
 import { CharentayComponent } from './charentay/charentay.component';
 import { ManosqueComponent } from './manosque/manosque.component';
 import { OrangeComponent } from './orange/orange.component';
@@ -50,6 +51,9 @@ const routes: Routes = [
   },
   {
     path: 'manosque' , component: ManosqueComponent
+  },
+  {
+    path: 'seillans' , component: SeillansComponent
   },
   {
     path: '',   redirectTo: 'intro', pathMatch: 'full' }, // redirect to `first-component`
