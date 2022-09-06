@@ -20,3 +20,14 @@ body, html {
 .font_blue {
   color:turquoise;
 }
+
+.trans-logo{
+  opacity: 0.7;
+  width:100px;
+  height: 100px;
+  position: absolute;
+  background-color: transparent;
+  top:0px;
+  left:92%;
+  z-index: 99999;
+}
