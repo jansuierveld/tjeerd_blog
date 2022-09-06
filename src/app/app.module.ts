@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component'; 
+import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 
@@ -21,6 +21,7 @@ import { ManosqueComponent } from './manosque/manosque.component';
 
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 import { SeillansComponent } from './seillans/seillans.component';
+import { AdsenseModule } from 'ng2-adsense';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { SeillansComponent } from './seillans/seillans.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxGoogleAnalyticsRouterModule
+    NgxGoogleAnalyticsRouterModule,
+    AdsenseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
