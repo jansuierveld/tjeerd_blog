@@ -8,11 +8,11 @@
 // footer {
 //   background-color:rgba(88,90,102,1);
 // }
-// .background-intro {
-//   background: rgb(215,214,221);
-//   background: linear-gradient(180deg, rgba(215,214,221,1) 59%, rgba(88,90,102,1) 100%); background-repeat:no-repeat;
-//   background-size:cover;
-// }
+.background-intro {
+  background: rgb(215,214,221);
+  background: linear-gradient(180deg, rgba(215,214,221,1) 0%, rgba(187,183,179,1) 52%, rgba(215,214,221,1) 100%);
+  background-size:cover;
+}
 
 body, html {
   height: 100%;
