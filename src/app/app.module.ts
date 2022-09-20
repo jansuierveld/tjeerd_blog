@@ -22,6 +22,7 @@ import { ManosqueComponent } from './manosque/manosque.component';
 import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 import { SeillansComponent } from './seillans/seillans.component';
 import { AdsenseModule } from 'ng2-adsense';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { AdsenseModule } from 'ng2-adsense';
     AppComponent,
     NavbarComponent,
     SeillansComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
