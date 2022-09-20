@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  adsense: {
+    adClient: 'ca-pub-8239777228243047',
+    show: true
+ }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
