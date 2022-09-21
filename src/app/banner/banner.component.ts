@@ -11,22 +11,13 @@ export class BannerComponent implements AfterViewInit {
     @Input() banner: Banner | undefined;
     showAd = environment.adsense.show;
 
-
-
     constructor() {
     }
 
     ngAfterViewInit() {
-      let adsbygoogle: any;
-        setTimeout(() => {
-            try {
-                (adsbygoogle = (window as any).adsbygoogle || []).push({
-                    overlays: {bottom: true}
-                });
-            } catch (e) {
-                console.error(e);
-            }
-        }, 0);
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
     }
 
 }
