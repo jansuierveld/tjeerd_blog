@@ -12,16 +12,14 @@ export class StvithComponent implements OnInit {
 
   banner: Banner;
 
-
   constructor(readonly introService: IntroService) {
     this.banner = new Banner(
       'ca-pub-8239777228243047',
-      '5702571326' ,
+      '5466555574' ,
       'auto',
       'true'
     )
    }
-
 
   ngOnInit(): void {
     this.introService.intro$.next(false);
