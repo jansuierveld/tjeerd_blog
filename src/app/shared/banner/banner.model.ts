@@ -1,12 +1,12 @@
 export class Banner {
   constructor(
       public adClient: string,
-      public adSlot: number,
+      public adSlot: string,
       public adFormat: string,
-      public fullWidthResponsive: boolean) {
+      public fullWidthResponsive: string) {
           this.adClient = adClient;
           this.adSlot = adSlot;
           this.adFormat = adFormat || 'auto';
-          this.fullWidthResponsive = fullWidthResponsive || true;
+          this.fullWidthResponsive = fullWidthResponsive || "true";
   }
 }
