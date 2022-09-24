@@ -56,7 +56,11 @@ import { BannerComponent } from './banner/banner.component';
     AppRoutingModule,
     HttpClientModule,
     NgxGoogleAnalyticsRouterModule,
-    AdsenseModule.forRoot()
+    // shown passing optional global defaults
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-8239777228243047',
+      adSlot: 5466555574
+      }),
   ],
   providers: [],
   bootstrap: [AppComponent]
