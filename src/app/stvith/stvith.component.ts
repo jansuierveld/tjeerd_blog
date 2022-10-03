@@ -11,17 +11,11 @@ import { Subscription } from 'rxjs';
 })
 export class StvithComponent implements OnInit {
 
-  subscription: Subscription | undefined;
-  adSenseWidth: string = 'normal';
-
   constructor(readonly introService: IntroService) {
   }
 
   ngOnInit(): void {
     this.introService.intro$.next(false);
-    this.subscription = this.introService.getaASenseWidth().subscribe(w => {
-      this.adSenseWidth = w
-    });
   }
 
 }

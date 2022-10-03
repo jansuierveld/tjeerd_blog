@@ -23,6 +23,7 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 import { SeillansComponent } from './seillans/seillans.component';
 import { AdsenseModule } from 'ng2-adsense';
 import { BannerComponent } from './banner/banner.component';
+import { AdsensechildComponent } from './shared/adsensechild/adsensechild.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { BannerComponent } from './banner/banner.component';
     NavbarComponent,
     SeillansComponent,
     BannerComponent,
+    AdsensechildComponent,
   ],
   imports: [
     BrowserModule,
