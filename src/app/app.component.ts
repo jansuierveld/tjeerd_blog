@@ -1,4 +1,4 @@
-import { OnInit, AfterViewInit, AfterContentChecked, Component, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { OnInit, AfterViewInit, AfterContentChecked, Component, ChangeDetectorRef, OnDestroy, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IntroService } from './intro.service';
 
@@ -13,6 +13,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
   title = 'tjeerd_blog';
   subscription: Subscription;
 
+
   constructor(readonly introService: IntroService, private changeDetector: ChangeDetectorRef) {
     this.subscription = this.introService.getIntroObs().subscribe(mintro => {
       this.isIntro = mintro
@@ -20,6 +21,11 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
   }
 
   ngOnInit(): void {
+    if (window.innerWidth >= 768) {
+      this.introService.adSenseWidth$.next('normal');
+    } else  {
+      this.introService.adSenseWidth$.next('mobile');
+    }
   }
 
   ngAfterViewInit(): void {

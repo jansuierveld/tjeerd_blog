@@ -11,6 +11,8 @@ export class IntroComponent implements OnInit {
 
   isIntro: boolean = true;
 
+  adSenseWidth: number = 300;
+
   constructor(readonly introService: IntroService) { }
 
   ngOnInit(): void {

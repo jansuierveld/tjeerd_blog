@@ -2,6 +2,7 @@ import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
 import { IntroService } from '../intro.service';
 import { Banner } from '../shared/banner/banner.model';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-stvith',
@@ -10,19 +11,17 @@ import { Banner } from '../shared/banner/banner.model';
 })
 export class StvithComponent implements OnInit {
 
-  banner: Banner;
+  subscription: Subscription | undefined;
+  adSenseWidth: string = 'normal';
 
   constructor(readonly introService: IntroService) {
-    this.banner = new Banner(
-      'ca-pub-8239777228243047',
-      '5466555574' ,
-      'auto',
-      'true'
-    )
-   }
+  }
 
   ngOnInit(): void {
     this.introService.intro$.next(false);
+    this.subscription = this.introService.getaASenseWidth().subscribe(w => {
+      this.adSenseWidth = w
+    });
   }
 
 }

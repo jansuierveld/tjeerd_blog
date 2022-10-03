@@ -7,14 +7,17 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class IntroService {
 
   intro$ = new BehaviorSubject<boolean>(true);
-  value:boolean | undefined;
+  adSenseWidth$= new BehaviorSubject<string>('normal');
 
   constructor() {
-
   }
 
   getIntroObs(): Observable<any> {
     return this.intro$.asObservable();
+  }
+
+  getaASenseWidth(): Observable<any> {
+    return this.adSenseWidth$.asObservable();
   }
 
 
