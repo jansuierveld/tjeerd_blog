@@ -24,9 +24,38 @@ body, html {
 .font_red {
   color:red;
 }
-
 .font_blue {
   color:turquoise;
+}
+
+#intro {
+  background-image: url("../assets/vennbahn.jpg");
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#navbar-mobile {
+    display:none;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar-mobile {
+    display:block;
+  }
+  .logo-mobile {
+    display:none;
+  }
+  .ad-w {
+    width:300;
+  }
 }
 
 .trans-logo{
