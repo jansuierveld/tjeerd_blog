@@ -1,6 +1,7 @@
 import { OnInit, AfterViewInit, AfterContentChecked, Component, ChangeDetectorRef, OnDestroy, HostListener } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IntroService } from './intro.service';
+import { Meta } from '@angular/platform-browser';  
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
   subscription: Subscription;
 
 
-  constructor(readonly introService: IntroService, private changeDetector: ChangeDetectorRef) {
+  constructor(readonly introService: IntroService, private changeDetector: ChangeDetectorRef, private meta: Meta) {
     this.subscription = this.introService.getIntroObs().subscribe(mintro => {
       this.isIntro = mintro
     });
@@ -26,6 +27,10 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
     } else  {
       this.introService.adSenseWidth$.next('mobile');
     }
+    this.meta.addTags([
+      { name: 'description', content: 'This is an article about Angular Meta service' },
+      { name: 'keywords', content: 'angular, javascript, typescript, meta, seo' }  
+    ]);  
   }
 
   ngAfterViewInit(): void {
