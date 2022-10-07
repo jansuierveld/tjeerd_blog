@@ -28,8 +28,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
       this.introService.adSenseWidth$.next('mobile');
     }
     this.meta.addTags([
-      { name: 'description', content: 'This is an article about Angular Meta service' },
-      { name: 'keywords', content: 'angular, javascript, typescript, meta, seo' }  
+      { name: 'description', content: 'Fietsen van Nederland naar het zuiden van frankrijk' },
+      { name: 'keywords', content: 'Fietsen, Fietsvakantie, Racefiets, Zuid-Frankrijk, Moezel, Nederland, Fietsen naar frankrijk, Rivier, Saone, Seillans, Rhone, Fietsen langs de moezel, Vennbahn, Maas, Frankrijk, Fietsen in Lyon, Naar Frankrijk fietsen, Lange afstanden fietsen, Fietsen naar de zon' }  
     ]);  
   }
 
