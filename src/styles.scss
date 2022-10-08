@@ -22,7 +22,7 @@ body, html {
   font-size: small;
 }
 .font_red {
-  color:red;
+  color:rgb(255, 0, 0);
 }
 .font_blue {
   color:turquoise;
@@ -61,7 +61,7 @@ body, html {
   z-index: 99999;
 }
 
-.image {
+.witte_foto {
   opacity: 1;
   display: block;
   width: 100%;
@@ -70,6 +70,6 @@ body, html {
   backface-visibility: hidden;
 }
 
-.container:hover .image {
+.witte_foto:hover {
   opacity: 0.5;
 }
