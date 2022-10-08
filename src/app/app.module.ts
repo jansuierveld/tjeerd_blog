@@ -24,6 +24,7 @@ import { SeillansComponent } from './seillans/seillans.component';
 import { AdsenseModule } from 'ng2-adsense';
 import { BannerComponent } from './banner/banner.component';
 import { AdsensechildComponent } from './shared/adsensechild/adsensechild.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -51,11 +52,8 @@ import { AdsensechildComponent } from './shared/adsensechild/adsensechild.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule,
-    AppRoutingModule,
     NgxGoogleAnalyticsModule.forRoot('G-B57ZZ6T4NP'),
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     NgxGoogleAnalyticsRouterModule,
     // shown passing optional global defaults
