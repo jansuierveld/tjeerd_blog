@@ -29,7 +29,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentChecked,
     }
     this.meta.addTags([
       { name: 'description', content: 'Fietsen van Nederland naar het zuiden van frankrijk' },
-      { name: 'keywords', content: 'Fietsen, Fietsvakantie, Racefiets, Zuid-Frankrijk, Moezel, Nederland, Fietsen naar frankrijk, Rivier, Saone, Seillans, Rhone, Fietsen langs de moezel, Vennbahn, Maas, Frankrijk, Fietsen in Lyon, Naar Frankrijk fietsen, Lange afstanden fietsen, Fietsen naar de zon, Goedkope fietsvakantie, Fietsroutes in frankrijk, Fietsroutes naar het zuiden, Fietsen langs het water, vlakke routes in frankrijk,' }  
+      { name: 'keywords', content: 'Fietsen, Fietsvakantie, Racefiets, Zuid-Frankrijk, Moezel, Nederland, Fietsen naar frankrijk, Rivier, Saone, Seillans, Rhone, Fietsen langs de moezel, Vennbahn, Maas, Frankrijk, Fietsen in Lyon, Naar Frankrijk fietsen, Lange afstanden fietsen, Fietsen naar de zon, Goedkope fietsvakantie, Fietsroutes in frankrijk, Fietsroutes naar het zuiden, Fietsen langs het water, vlakke routes in frankrijk, fietsblog, suierveld, blog voor fietsen, over de vennbahn fietsen' }  
     ]);  
   }
 
